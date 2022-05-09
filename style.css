@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff9ab;
+}
+
+.navigation {
+  position: fixed;
+  background: -webkit-linear-gradient(left, #fff9ab, orange);
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+
+  display: flex;
+  z-index: 10;
+}
+
+.navigation ul {
+  display: flex;
+}
+
+.navigation ul li {
+  list-style: none;
+  margin-left: 5px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: rgb(212, 139, 3);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navigation ul li a:hover {
+  background-color: #f19800;
+  color: #fff;
+  border: 4px;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#landing {
+  height: 100vh;
+}
+
+#landing h1 {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 0;
+  left: 200px;
+  font-size: 120px;
+  color: #fff;
+  text-align: center;
+}
+
+.mid-img {
+  z-index: 3;
+}
+
+.focus-img {
+  z-index: 4;
+}
+
+.leaf-img {
+  z-index: 5;
+}
+
+.diah {
+  padding-top: 120px;
+  position: absolute;
+  z-index: 6;
+  left: 43%;
+}
+.btns {
+  position: absolute;
+  top: 80%;
+  z-index: 9;
+  margin: 0 auto;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  background-color: #f19800;
+  color: #fff;
+  font-size: 25px;
+  box-shadow: 5px 0 15px rgba(85, 85, 85, 0.8);
+}
+
+.btns:hover {
+  font-weight: bold;
+  color: black;
+}
+
+#landing::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #f19800, transparent);
+  z-index: 5;
+}
+
+#about {
+  padding: 70px 0;
+  line-height: 25px;
+  color: #fff;
+  background-color: #f19800;
+}
+
+.content {
+  z-index: 5;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content hr {
+  width: 30%;
+  border: 1px solid #fff;
+  text-align: center;
+  display: inline-block;
+}
+
+.content p {
+  text-align: justify;
+  text-indent: 100px;
+}
